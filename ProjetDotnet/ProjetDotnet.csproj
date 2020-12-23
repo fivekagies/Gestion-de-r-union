@@ -1,0 +1,446 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{66EEDC11-C635-44D8-BE2C-59A734BA5466}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ProjetDotnet</RootNamespace>
+    <AssemblyName>ProjetDotnet</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.52">
+      <HintPath>C:\Users\hp\Desktop\Ensak\semestre8\c#&amp;.Net\Tp\BOUAZIZ_RAJAA\BOUAZIZ_RAJAA\bin\Debug\Bunifu_UI_v1.52.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Windows\Microsoft.NET\assembly\GAC_MSIL\CrystalDecisions.CrystalReports.Engine\v4.0_13.0.4000.0__692fbea5521e1304\CrystalDecisions.CrystalReports.Engine.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Windows\Microsoft.NET\assembly\GAC_MSIL\CrystalDecisions.ReportSource\v4.0_13.0.4000.0__692fbea5521e1304\CrystalDecisions.ReportSource.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Windows\Microsoft.NET\assembly\GAC_MSIL\CrystalDecisions.Shared\v4.0_13.0.4000.0__692fbea5521e1304\CrystalDecisions.Shared.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Windows\Microsoft.NET\assembly\GAC_MSIL\CrystalDecisions.Windows.Forms\v4.0_13.0.4000.0__692fbea5521e1304\CrystalDecisions.Windows.Forms.dll</HintPath>
+    </Reference>
+    <Reference Include="FlatButton">
+      <HintPath>C:\Users\hp\Downloads\FlatButton.dll</HintPath>
+    </Reference>
+    <Reference Include="JDragControl">
+      <HintPath>C:\Users\hp\Downloads\JDragControl.dll</HintPath>
+    </Reference>
+    <Reference Include="JImageButton">
+      <HintPath>C:\Users\hp\Downloads\JImageButton.dll</HintPath>
+    </Reference>
+    <Reference Include="JMetroTextBox">
+      <HintPath>C:\Users\hp\Downloads\JMetroTextBox.dll</HintPath>
+    </Reference>
+    <Reference Include="JTextBox">
+      <HintPath>C:\Users\hp\Downloads\JTextBox.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Design, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Fonts, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Fonts.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AfficherParticipant.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AfficherParticipant.Designer.cs">
+      <DependentUpon>AfficherParticipant.cs</DependentUpon>
+    </Compile>
+    <Compile Include="aide.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="aide.Designer.cs">
+      <DependentUpon>aide.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AuthChef.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AuthChef.Designer.cs">
+      <DependentUpon>AuthChef.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AuthMembre.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AuthMembre.Designer.cs">
+      <DependentUpon>AuthMembre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="choixChef.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="choixChef.Designer.cs">
+      <DependentUpon>choixChef.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChoixduMembre.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChoixduMembre.Designer.cs">
+      <DependentUpon>ChoixduMembre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Config.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Config.Designer.cs">
+      <DependentUpon>Config.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DatabaseGestionReunionDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DatabaseGestionReunionDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DatabaseGestionReunionDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DatabaseGestionReunionDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DatabaseGestionReunionDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DatabaseGestionReunionDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DatabaseGestionReunionDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DatabaseGestionReunionDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DatabaseGestionReunionDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DatabaseGestionReunionDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DatabaseGestionReunionDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DatabaseGestionReunionDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DatabaseGestionReunionDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DatabaseGestionReunionDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DatabaseGestionReunionDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DatabaseGestionReunionDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InviterMembre.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InviterMembre.Designer.cs">
+      <DependentUpon>InviterMembre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MembreHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MembreHome.Designer.cs">
+      <DependentUpon>MembreHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReserverMateriel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReserverMateriel.Designer.cs">
+      <DependentUpon>ReserverMateriel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SecritaireAuth.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SecritaireAuth.Designer.cs">
+      <DependentUpon>SecritaireAuth.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ShowMember.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShowMember.Designer.cs">
+      <DependentUpon>ShowMember.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ShowMessagecs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShowMessagecs.Designer.cs">
+      <DependentUpon>ShowMessagecs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ShowParticipant.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShowParticipant.Designer.cs">
+      <DependentUpon>ShowParticipant.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Signup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Signup.Designer.cs">
+      <DependentUpon>Signup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="signupM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="signupM.Designer.cs">
+      <DependentUpon>signupM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SignUpSecretaire.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SignUpSecretaire.Designer.cs">
+      <DependentUpon>SignUpSecretaire.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AfficherParticipant.resx">
+      <DependentUpon>AfficherParticipant.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="aide.resx">
+      <DependentUpon>aide.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AuthChef.resx">
+      <DependentUpon>AuthChef.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AuthMembre.resx">
+      <DependentUpon>AuthMembre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="choixChef.resx">
+      <DependentUpon>choixChef.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChoixduMembre.resx">
+      <DependentUpon>ChoixduMembre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Config.resx">
+      <DependentUpon>Config.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InviterMembre.resx">
+      <DependentUpon>InviterMembre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MembreHome.resx">
+      <DependentUpon>MembreHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ReserverMateriel.resx">
+      <DependentUpon>ReserverMateriel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SecritaireAuth.resx">
+      <DependentUpon>SecritaireAuth.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShowMember.resx">
+      <DependentUpon>ShowMember.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShowMessagecs.resx">
+      <DependentUpon>ShowMessagecs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShowParticipant.resx">
+      <DependentUpon>ShowParticipant.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Signup.resx">
+      <DependentUpon>Signup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="signupM.resx">
+      <DependentUpon>signupM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SignUpSecretaire.resx">
+      <DependentUpon>SignUpSecretaire.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="DatabaseGestionReunionDataSet.xsc">
+      <DependentUpon>DatabaseGestionReunionDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DatabaseGestionReunionDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DatabaseGestionReunionDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DatabaseGestionReunionDataSet.xss">
+      <DependentUpon>DatabaseGestionReunionDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DatabaseGestionReunionDataSet1.xsc">
+      <DependentUpon>DatabaseGestionReunionDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DatabaseGestionReunionDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DatabaseGestionReunionDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DatabaseGestionReunionDataSet1.xss">
+      <DependentUpon>DatabaseGestionReunionDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DatabaseGestionReunionDataSet2.xsc">
+      <DependentUpon>DatabaseGestionReunionDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="DatabaseGestionReunionDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DatabaseGestionReunionDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DatabaseGestionReunionDataSet2.xss">
+      <DependentUpon>DatabaseGestionReunionDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="DatabaseGestionReunionDataSet3.xsc">
+      <DependentUpon>DatabaseGestionReunionDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="DatabaseGestionReunionDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DatabaseGestionReunionDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DatabaseGestionReunionDataSet3.xss">
+      <DependentUpon>DatabaseGestionReunionDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="DatabaseGestionReunionDataSet4.xsc">
+      <DependentUpon>DatabaseGestionReunionDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="DatabaseGestionReunionDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DatabaseGestionReunionDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DatabaseGestionReunionDataSet4.xss">
+      <DependentUpon>DatabaseGestionReunionDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="DatabaseGestionReunionDataSet5.xsc">
+      <DependentUpon>DatabaseGestionReunionDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="DatabaseGestionReunionDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DatabaseGestionReunionDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DatabaseGestionReunionDataSet5.xss">
+      <DependentUpon>DatabaseGestionReunionDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="DatabaseGestionReunionDataSet6.xsc">
+      <DependentUpon>DatabaseGestionReunionDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="DatabaseGestionReunionDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DatabaseGestionReunionDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DatabaseGestionReunionDataSet6.xss">
+      <DependentUpon>DatabaseGestionReunionDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="DatabaseGestionReunionDataSet7.xsc">
+      <DependentUpon>DatabaseGestionReunionDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="DatabaseGestionReunionDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DatabaseGestionReunionDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DatabaseGestionReunionDataSet7.xss">
+      <DependentUpon>DatabaseGestionReunionDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DatabaseGestionReunion.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="DatabaseGestionReunion_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>DatabaseGestionReunion.mdf</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 et x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
